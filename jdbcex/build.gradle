@@ -22,15 +22,12 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-  implementation 'org.projectlombok:lombok:1.18.26'
-  testImplementation 'org.projectlombok:lombok:1.18.26'
   compileOnly('javax.servlet:javax.servlet-api:4.0.1')
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 
   implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.1.4'
-  implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.1'
 
 }
 
